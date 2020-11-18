@@ -1,9 +1,9 @@
 package max.sum;
 
-public class twoDArray {
+public class TwoDArray {
     int[][] rectangle;
     int size;
-    public twoDArray(int[][] rectangle){
+    public TwoDArray(int[][] rectangle){
         this.rectangle = rectangle;
         this.size = rectangle.length;
     }
