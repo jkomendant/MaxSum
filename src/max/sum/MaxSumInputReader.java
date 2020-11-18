@@ -14,18 +14,11 @@ public class MaxSumInputReader {
             Scanner inputFile = new Scanner(new File(file));
             int arraySize = inputFile.nextInt();
             rectangle = new int[arraySize][arraySize];
-            ArrayList<Integer> arrayList = new ArrayList<>();
-            while (inputFile.hasNextInt()){
-                int input = inputFile.nextInt();
-                arrayList.add(input);
-            }
-
-            int k = 0;
             for (int i = 0; i < arraySize; i++) {
                 for (int j = 0; j < arraySize; j++) {
-                    rectangle[i][j] = arrayList.get(j+k);
+                    int input = inputFile.nextInt();
+                    rectangle[i][j] = input;
                 }
-                k +=100;
             }
 
         }catch (FileNotFoundException e){
