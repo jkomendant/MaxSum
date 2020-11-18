@@ -3,19 +3,20 @@ package max.sum;
 public class TwoDArray {
     int[][] rectangle;
     int size;
-    public TwoDArray(int[][] rectangle){
+
+    public TwoDArray(int[][] rectangle) {
         this.rectangle = rectangle;
         this.size = rectangle.length;
     }
 
-    public int findMaxSum () {
+    public int findMaxSum() {
         int biggestNum = Integer.MIN_VALUE;
         for (int rowIndex = 0; rowIndex < size; rowIndex++) {
             for (int colIndex = 0; colIndex < size; colIndex++) {
                 for (int rectWidth = 0; rectWidth < size; rectWidth++) {
                     for (int rectHeight = 0; rectHeight < size; rectHeight++) {
                         int sum = 0;
-                        for(int i = rowIndex; i <= rectWidth; i++) {
+                        for (int i = rowIndex; i <= rectWidth; i++) {
                             for (int j = colIndex; j <= rectHeight; j++) {
                                 sum += rectangle[i][j];
                             }

@@ -9,7 +9,7 @@ public class MaxSumInputReader {
 
     private int[][] rectangle;
 
-    public MaxSumInputReader(String file){
+    public MaxSumInputReader(String file) {
         try {
             Scanner inputFile = new Scanner(new File(file));
             int arraySize = inputFile.nextInt();
@@ -21,7 +21,7 @@ public class MaxSumInputReader {
                 }
             }
 
-        }catch (FileNotFoundException e){
+        } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
     }
