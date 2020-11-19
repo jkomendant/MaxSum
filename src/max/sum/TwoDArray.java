@@ -1,8 +1,8 @@
 package max.sum;
 
 public class TwoDArray {
-    int[][] rectangle;
-    int size;
+    private int[][] rectangle;
+    private int size;
 
     public TwoDArray(int[][] rectangle) {
         this.rectangle = rectangle;
